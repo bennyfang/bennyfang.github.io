@@ -1,2 +1,2 @@
-#My custom website
-All rights reserved.
+#Benny's custom website
+Source code is located here.
