@@ -1,2 +1,3 @@
 #Benny's custom website
-Source code is located here.
+
+This is my first project in writing my own custom website
