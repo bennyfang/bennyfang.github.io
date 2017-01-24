@@ -2,3 +2,5 @@ name: Benny's Custom Webpage
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
 theme: jekyll-theme-minimal
+gems:
+  - jekyll-sitemap
