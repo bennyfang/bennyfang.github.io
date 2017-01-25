@@ -30,8 +30,8 @@ p {
 }
 li {
     list-style: none;
-    font-size: 1.0em;
-    line-height: 0.5em;
+    /* font-size: 1.0em;
+    line-height: 0.5em; */
 }
 footer {
     border-top: 1px solid #d5d5d5;
