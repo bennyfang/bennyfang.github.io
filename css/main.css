@@ -20,18 +20,18 @@ a:hover {
     text-decoration: underline;
 }
 h1 {
-    font-size: 2em;
+    font-size: 3em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
 p {
-    font-size: 1.0em;
-    line-height: 0.9em;
+    font-size: 1.5em;
+    line-height: 1.4em;
     color: #333;
 }
 li {
     list-style: none;
-    font-size: 0.8em;
-    line-height: 0.7em;
+    font-size: 1.0em;
+    line-height: 0.5em;
 }
 footer {
     border-top: 1px solid #d5d5d5;
