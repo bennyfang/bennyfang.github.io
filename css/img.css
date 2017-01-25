@@ -1,10 +1,10 @@
 .image-cropper {
     width: 200px;
     height: 200px;
-    position: relative;
+    position: absolute;
     overflow: hidden;
     border-radius: 50%;
-    float: right;
+    right: 0px;
 }
 
 img {
