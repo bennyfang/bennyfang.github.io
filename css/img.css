@@ -1,17 +1,41 @@
 .image-cropper {
     width: 200px;
     height: 200px;
-    position: absolute;
+    position: relative;
     overflow: hidden;
     border-radius: 50%;
-    right: 200px;
+    float: left;
+    margin: 25px;
+    top: 40px;
+}
+
+.cv .image-cropper {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    float: right;
+    margin: 0px;
+    top: -20px;
 }
 
 img {
     display: inline;
-    margin: 0 auto;
+    margin: 0px auto;
     height: 100%;
     width: auto;
+}
+
+img.square {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+    float: right;
+    margin: 15px;
+    top: -20px;
+    display: inline;
 }
 
 .button {
@@ -21,11 +45,11 @@ img {
   color: #FFFFFF;
   text-align: center;
   font-size: 28px;
-  padding: 20px;
+  padding: 15px;
   width: 150px;
   transition: all 0.5s;
   cursor: pointer;
-  margin: 25px 50px;
+  margin: 15px;
 }
 
 .button span {
