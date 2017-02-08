@@ -1,3 +1,4 @@
+// image and button customization
 .image-cropper {
     width: 200px;
     height: 200px;
@@ -5,8 +6,7 @@
     overflow: hidden;
     border-radius: 50%;
     float: left;
-    margin: 25px;
-    top: 40px;
+    margin: 1.5em 1.5em 1.5em 0em;
 }
 
 .cv .image-cropper {
@@ -16,13 +16,12 @@
     overflow: hidden;
     border-radius: 50%;
     float: right;
-    margin: 0px;
-    top: -20px;
+    margin: 1em 0em 1em 1em;
 }
 
 img {
     display: inline;
-    margin: 0px auto;
+    margin: 0em auto;
     height: 100%;
     width: auto;
 }
@@ -33,23 +32,22 @@ img.square {
     position: relative;
     overflow: hidden;
     float: right;
-    margin: 15px;
-    top: -20px;
+    margin: 1em 0em 1em 1em;
     display: inline;
 }
 
 .button {
-  border-radius: 4px;
+  border-radius: 0.25em;
   background-color: #4CAF50; /* Green */
   border: none;
   color: #FFFFFF;
   text-align: center;
-  font-size: 28px;
-  padding: 15px;
-  width: 150px;
+  font-size: 1em;
+  padding: 0.55em;
+  width: 10em;
   transition: all 0.5s;
   cursor: pointer;
-  margin: 15px;
+  margin: 0.5em;
 }
 
 .button span {
@@ -64,12 +62,12 @@ img.square {
   position: absolute;
   opacity: 0;
   top: 0;
-  right: -20px;
+  right: -0.75em;
   transition: 0.5s;
 }
 
 .button:hover span {
-  padding-right: 25px;
+  padding-right: 1em;
 }
 
 .button:hover span:after {
