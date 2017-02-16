@@ -2,32 +2,39 @@
 h1, h2, h3, h4, h5, h6 { font-family: Verdana, Geneva, sans-serif }
 p, , .cv li, .cv ul li { font-family: 'Merriweather', Georgia, Times; }
 
+/* fix position of content */
+.fixedContent { width: 55em; max-width: 55em; margin: auto; display: inline-block;}
+#fixedRight { float: right position: absolute;}
+#fixedLeft { float: right position: absolute;}
+
 /* body and nav */
 body { margin: 3.75em auto; width: 70%; }
 nav { margin-bottom: 2em; }
 nav ul, footer ul { font-family: "Trebuchet MS", Helvetica, sans-serif; padding: 0em; list-style: none; font-weight: bold; }
-nav ul li, footer ul li { display: inline; margin-right: 2em; }
+nav ul li { display: inline; margin-right: 2em; }
+footer ul li { display: inline; margin-right: 4em; }
 
 /* paragraph and font */
 a { text-decoration: none; color: #999; }
 a:hover { text-decoration: underline; }
-h1 { font-size: 2.5em; font-size: 3.25vw; }
-h2 { font-size: 2em; font-size: 2.6vw; }
-h3 { font-size: 1.5em; font-size: 1.9vw; }
-p { font-size: 1.5em; font-size: 1.9vw; line-height: 150%; }
+h1 { font-size: 2.5em; /* font-size: 3.25vw; */ }
+h2 { font-size: 2em; /* font-size: 2.6vw; */}
+h3 { font-size: 1.5em; /* font-size: 1.9vw; */}
+p { font-size: 1.5em; /* font-size: 1.9vw; */ line-height: 150%; }
 
 /* footer */
-footer { border-top: 0.1em solid #d5d5d5; font-size: 1em; font-size: 1.3vw; clear: left; }
+footer { border-top: 0.1em solid #d5d5d5; font-size: 0.8em; /* font-size: 1.3vw; */ clear: left; }
 
 /* cv tab */
-.cv ul li { font-size: 1.25em; font-size: 1.62vw; line-height: 150%; list-style: disk; margin-left: -1em; margin-left: -1.3vw; list-style-position: outside;}
+.cv ul li { font-size: 1.25em; /*font-size: 1.62vw; */ line-height: 150%; list-style: disk; margin-left: -1em; /* margin-left: -1.3vw; */ list-style-position: outside;}
 .cv h1 { font-style: italic; }
 .cv h2 { text-decoration: underline; }
 
 /* about tab */
-.about li { font-size: 1.5em; font-size: 2.03vw; list-style: none; }
+.about li { font-size: 1.5em; /* font-size: 2.03vw; */ list-style: none; }
 
 /* posts - not implemented */
+/*
 ul.posts { margin: 1.25em auto 2.5em; font-size: 1.25em;}
 ul.posts li { list-style: none; }
-
+*/
