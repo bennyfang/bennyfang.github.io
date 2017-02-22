@@ -3,7 +3,7 @@ h1, h2, h3, h4, h5, h6 { font-family: Verdana, Geneva, sans-serif }
 p, , .cv li, .cv ul li { font-family: 'Merriweather', Georgia, Times; }
 
 /* fix position of content */
-.fixedContent { width: 55em; max-width: 55em; margin: auto; display: inline-block;}
+/* .fixedContent { width: 55em; max-width: 55em; margin: auto; display: inline-block;} */
 #fixedRight { float: right position: absolute;}
 #fixedLeft { float: right position: absolute;}
 
