@@ -2,17 +2,16 @@
 h1, h2, h3, h4, h5, h6 { font-family: Verdana, Geneva, sans-serif }
 p, , .cv li, .cv ul li { font-family: 'Merriweather', Georgia, Times; }
 
-/* fix position of content */
-/* .fixedContent { width: 55em; max-width: 55em; margin: auto; display: inline-block;} */
-#fixedRight { float: right position: absolute;}
-#fixedLeft { float: right position: absolute;}
-
-/* body and nav */
-body { margin: 3.75em auto; width: 70%; }
+/* body, nav, footer */
+body { margin: 3.75em auto; width: 55em; min-height: 100%; }
 nav { margin-bottom: 2em; }
-nav ul, footer ul { font-family: "Trebuchet MS", Helvetica, sans-serif; padding: 0em; list-style: none; font-weight: bold; }
+nav ul, footer ul { font-family: "Trebuchet MS", Helvetica, sans-serif; margin: 1em auto; padding: 0em; list-style: none; font-weight: bold;}
 nav ul li { display: inline; margin-right: 2em; }
+footer { border-top: 0.2em solid #d5d5d5; float: left; font-size: 0.8em; position: relative; bottom:0em; width: 70em; height: 5em; clear: both; }
 footer ul li { display: inline; margin-right: 4em; }
+
+/* content wrapper */
+#contentWrapper {float: left; height: 70% overflow: scroll; margin-bottom: 5em; overflow: scroll; }
 
 /* paragraph and font */
 a { text-decoration: none; color: #999; }
@@ -22,9 +21,6 @@ h2 { font-size: 2em; /* font-size: 2.6vw; */}
 h3 { font-size: 1.5em; /* font-size: 1.9vw; */}
 p { font-size: 1.5em; /* font-size: 1.9vw; */ line-height: 150%; }
 
-/* footer */
-footer { border-top: 0.1em solid #d5d5d5; font-size: 0.8em; /* font-size: 1.3vw; */ clear: left; }
-
 /* cv tab */
 .cv ul li { font-size: 1.25em; /*font-size: 1.62vw; */ line-height: 150%; list-style: disk; margin-left: -1em; /* margin-left: -1.3vw; */ list-style-position: outside;}
 .cv h1 { font-style: italic; }
@@ -32,6 +28,10 @@ footer { border-top: 0.1em solid #d5d5d5; font-size: 0.8em; /* font-size: 1.3vw;
 
 /* about tab */
 .about li { font-size: 1.5em; /* font-size: 2.03vw; */ list-style: none; }
+
+/* fix position of content */
+#fixedRight { float: right position: absolute;}
+#fixedLeft { float: left position: absolute;}
 
 /* posts - not implemented */
 /*

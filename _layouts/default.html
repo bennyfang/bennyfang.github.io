@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 	<html>
-        <div class="fixedContent">
+        <div>
         	<head>
         	    <meta charset="utf-8">
             	<meta name="viewport" width="device-width, initial-scale=1.0">
@@ -12,19 +12,21 @@
         		<link rel="stylesheet" type="text/css" href="/css/img.css">
         	</head>
         	<body>
-        		<nav>
-            		<ul>
-                		<li class="nav-home"><a href="/">Home</a></li>
-        	        	<li class="nav-cv"><a href="/cv">CV</a></li>
-                		<li class="nav-about"><a href="/about">About</a></li>
-                		<!--li><a href="/blog">Blog</a></li-->
-            		</ul>
-        		</nav>
-        		<div class="container">
-        		
-        		{{ content }}
-        		
-        		</div><!-- /.container -->
+        	   <div class="contentWrapper">
+            		<nav>
+                		<ul>
+                    		<li class="nav-home"><a href="/">Home</a></li>
+            	        	<li class="nav-cv"><a href="/cv">CV</a></li>
+                    		<li class="nav-about"><a href="/about">About</a></li>
+                    		<!--li><a href="/blog">Blog</a></li-->
+                		</ul>
+            		</nav>        		
+        		    <div class="container">
+            		
+            		{{ content }}
+            		
+            		</div><!-- /.container -->
+            	</div>
         		<footer>
             		<ul>
                 		<li>Email Me @ <a href="mailto:bfang.01234@gmail.com">bfang.01234@gmail.com</a></li>
