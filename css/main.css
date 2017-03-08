@@ -3,19 +3,21 @@ h1, h2, h3, h4, h5, h6 { font-family: Verdana, Geneva, sans-serif }
 p, , .cv li, .cv ul li { font-family: 'Merriweather', Georgia, Times; }
 
 /* body, nav, footer */
-body { margin: 3.75em auto; width: 55em; min-height: 100%; }
+body { margin: 3.75em auto; width: 55em; height: 100%; display: table;}
 nav { margin-bottom: 2em; }
-nav ul, footer ul { font-family: "Trebuchet MS", Helvetica, sans-serif; margin: 1em auto; padding: 0em; list-style: none; font-weight: bold;}
-nav ul li { display: inline; margin-right: 2em; }
-footer { border-top: 0.2em solid #d5d5d5; float: left; font-size: 0.8em; position: relative; bottom:0em; width: 70em; height: 5em; clear: both; }
+nav ul, footer ul  { font-family: "Trebuchet MS", Helvetica, sans-serif; margin: 1em auto; padding: 0em; list-style: none; font-weight: bold;}
+nav ul li { display: inline; margin-right: 3em; }
+footer { border-top: 0.2em solid #d5d5d5; float: left; font-size: 0.8em; position: relative; bottom: 0em; width: 70em; height: 5em; }
 footer ul li { display: inline; margin-right: 4em; }
 
 /* content wrapper */
-#contentWrapper {float: left; height: 70% overflow: scroll; margin-bottom: 5em; overflow: scroll; }
+/* #contentWrapper { min-height: 100%; height: auto !important; height: 100%; margin: 0 auto -5em; border: 1px solid;} */
+.contentWrapper {display: table-row; height: 0.5em; border: 1px solid;}
+.contentExpanded { height: 100%; }
 
 /* paragraph and font */
 a { text-decoration: none; color: #999; }
-a:hover { text-decoration: underline; }
+a:hover { text-decoration: underline; color:#ccc; }
 h1 { font-size: 2.5em; /* font-size: 3.25vw; */ }
 h2 { font-size: 2em; /* font-size: 2.6vw; */}
 h3 { font-size: 1.5em; /* font-size: 1.9vw; */}
@@ -26,6 +28,13 @@ p { font-size: 1.5em; /* font-size: 1.9vw; */ line-height: 150%; }
 .cv h1 { font-style: italic; }
 .cv h2 { text-decoration: underline; }
 
+/* cv sidebar */
+.cvsidebar { left: 0em; position: absolute;}
+.cvsidebar nav { width: 10em; padding-left:2em; }
+.cvsidebar nav ul li { font-size: 1em; float: left; list-style: none; margin-top: 40px;}
+.cvsidebar nav.stick { position: fixed; top: 0; z-index: 10000; margin-top: 40px; }
+a.nav-active { color:#FF4500; /* orange-red */ }
+
 /* about tab */
 .about li { font-size: 1.5em; /* font-size: 2.03vw; */ list-style: none; }
 
@@ -33,8 +42,3 @@ p { font-size: 1.5em; /* font-size: 1.9vw; */ line-height: 150%; }
 #fixedRight { float: right position: absolute;}
 #fixedLeft { float: left position: absolute;}
 
-/* posts - not implemented */
-/*
-ul.posts { margin: 1.25em auto 2.5em; font-size: 1.25em;}
-ul.posts li { list-style: none; }
-*/

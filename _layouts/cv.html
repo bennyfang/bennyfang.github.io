@@ -10,16 +10,35 @@
         		<!-- link to main stylesheet -->
         		<link rel="stylesheet" type="text/css" href="/css/main.css">
         		<link rel="stylesheet" type="text/css" href="/css/img.css">
+        		
+        		<script src="../js/jquery-1.9.1.min.js"></script>
+                <script src="../js/jquery.scrollto.js"></script>
+                <script src="../js/scroll.js"></script>
+        		
         	</head>
+        	<div class="cvsidebar">
+                <div id="nav-anchor"></div>
+                <nav>
+                    <ul>
+                        <li><a href="#edu">My Education</a></li>
+                        <li><a href="#tech">My Technical Skills</a></li>
+                        <li><a href="#work">My Work Experience</a></li>
+                        <li><a href="#project">My Professional Projects</a></li>
+                        <li><a href="#ind">My Individual Projects</a></li>
+                        <li><a href="#hobby">My Hobbies and Interests</a></li>
+                    </ul>
+                </nav>
+            </div><!-- /sidebar -->
+            
         	<body>
         		<nav>
             		<ul>
                 		<li class="nav-home"><a href="/">Home</a></li>
         	        	<li class="nav-cv"><a href="/cv">CV</a></li>
                 		<li class="nav-about"><a href="/about">About</a></li>
-                		<!--li><a href="/blog">Blog</a></li-->
             		</ul>
-        		</nav>        		
+        		</nav> <!-- /main navi -->
+                
     		    <div class="container">
         		
         		{{ content }}

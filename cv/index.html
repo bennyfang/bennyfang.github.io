@@ -1,116 +1,121 @@
 ---
-layout: default
+layout: cv
 title: CV
 description: Benny Fang's CV
 ---
 
 <div class="cv">
 	<p>Click to view my resume in pdf: <a href="/files/Resume.pdf" target="_blank" class="button" title="View CV in PDF"><span>View CV  </span></a></p>
-	<section>
-	<h1>Education</h1>
-	<div class="image-cropper">
-        <img alt="UofTLogo" src="/img/uoftlogo.jpg">
-    </div>
-	<h2>2011-2016</h2>
-	<p>University of Toronto - Bachelor of Applied Science and Engineering </p>	     
-	<p>Major in Computer Engineering, Minor in Engineering Business</p>
-	<p>University of Toronto St. George Campus, Toronto, ON</p>
-	</section><section>
-	<h1>Technical Skills</h1>
-	<h3>Software Languages:</h3>
-	<ul>
-        <li>Object-Oriented (C, C++, Java, Python) - 5 years</li>
-        <li>SQL Database (MySQL, MicrosoftSQL, PostgreSQL, Java ODBC) - 1 year</li>
-        <li>JavaScript (JQuery, JSON, AngularJS) - 1 year</li>
-        <li>ASP.NET (VB, C#) - 1 year</li>
-        <li>Swift (iOS App Dev) - beginner</li>
-        <li>Web Development (PHP, html, XML, CSS, Markdown Language) - 1.5 years</li>
-    </ul>
-    <h3>Platforms:</h3>
-    <p>Microsoft Visual Studio, Microsoft Dynamics CRM, Eclipse, XCode</p>
-    <h3>SCM Tools:</h3>
-    <p>Microsoft Visual Studio TFS, Git, Subversion (linux)</p>
-    <h3>Operating Systems:</h3>
-    <p>Microsoft Windows, MacOS, Linux/UNIX</p>
-    <h3>Others:</h3>
-    <p>AGILE/SCRUM development cycles, Network programming (TCP/IP protocol), Multi-threading and optimization, Data structures and algorithms, VR/AR, Technical documentation</p>
-    </section><section>
-	<h1>Work Experience</h1>
-    <img alt="CityOfBrampton" class="square" src="/img/brampton.jpg">
-	<h2>2014-2015</h2>
-    <h3>System Developer, City of Brampton, Ontario:</h3>
-    <ul>
-        <li>Enrolled in Professional Experience Year (PEY) program in the University of Toronto for one year, working as a System Developer in the Solution Delivery team of IT services in the City of Brampton</li>
-        <li>Customized Visual Basic macros for Excel to automate data retrieval from server storage and smart fill tables</li>
-        <li>Queried data for fire incidents and categorized them into types and years, which was then translated into a heat map presentation on the city website</li>
-        <li>Resolved over 50 bugs in the Application Inventory Depository site written in VB.Net to launch it into production</li>
-        <li>Designed the Transit Incident Tracking System (see page 2, second project) to address the city’s need for an online, easy-to-use tracking system</li>
-        <li>Researched a solution to outline the system dependencies in the City of Brampton and showcased the results via demos</li>
-    </ul>
-    </section><section>
-	<h1>Programming and Engineering Projects</h1>
-	<h2>2015-2016</h2>
-    <h3>Team Lead of a Real-time Piano Simulator Project,<br>University of Toronto:</h3>
-    <ul>
-        <li>Handled a project in a team of 4 to recreate authentic piano sound at real time by simulating complex physical piano mechanism rather than simple piano key sampling</li>
-        <li>Divided the team into 2 groups: the algorithm team responsible for calculations and research, and the programmer team responsible for software-hardware implementations</li>
-        <li>Visualized the piano sound algorithm as a function of time and initial key-strike velocity to simulate the action of the hammer striking the string inside the piano</li>
-        <li>Initially ran algorithm in matlab, converting calculated sample sound vectors into a playable sound wave</li>
-        <li>Migrated to C++ due to its superior runtime and available means of optimization such as multi-threading and blocking</li>
-        <li>Implemented hardware integration with a electric piano via USB ports and programmed generated sound onto each piano key</li>
-        <li>Demonstrated design at the annual University of Toronto design fair, allowing users to play with the piano freely while generating sound at real-time as keys were struck</li>
-    </ul>
-    <h2>2014-2015</h2>
-    <h3>Developer of the Transit Incident Tracking Solution,<br>City of Brampton:</h3>
-    <ul>
-        <li>Approached by the City of Brampton’s Transit Department representative to create a system tracking transit incident records within the City of     Brampton</li>
-        <li>Designed the system using the Microsoft Dynamics CRM 2011 platform</li>
-        <li>Drafted Excel document to outline schematic and relationship information</li>
-        <li>Implemented entities and forms to store information entered by the users</li>
-        <li>Customized the entities with JavaScript and JQuery to integrate smart forms to auto-fill information, hide and show fields to users with different roles and grey out unnecessary fields based on drop-down options</li>
-        <li>Built automated email sender using Microsoft CRM workflows and dialogs</li>
-        <li>Held weekly meetings with the client and the project manager for feedbacks</li>
-        <li>Presented design to the client and power-users and delivered the system into production</li>
-    </ul>
-    <h2>2014</h2>
-    <h3>Member of a VR Design Project Team,<br>University of Toronto:</h3>
-    <ul>
-        <li>Engaged in an VR application development project in C# on the Unity platform</li>
-        <li>Participated in a group of 3 and was assigned the task to brainstorm project design and elements to implement due to my prior music background</li>
-        <li>Created a virtual music player that respond to hand gestures to the sensor camera</li>
-        <li>Placed audio player on a virtual 3D plane and scaled music volume to the user’s distance from the player (the sound was strong if user was close and weak if user was far)</li>
-        <li>Supported multiple music players and placed audio control buttons to play and stop the music, as well as adjusting the volumes of each player through hand gestures only</li>
-        <li>Allowed project to be passed on to future VR developers with drafted technical documentation and packaged libraries</li>
-    </ul>
-    </section><section>
+	<section id="edu">
+    	<h1>Education</h1>
+    	<div class="image-cropper">
+            <img alt="UofTLogo" src="/img/uoftlogo.jpg">
+        </div>
+    	<h2>2011-2016</h2>
+    	<p>University of Toronto - Bachelor of Applied Science and Engineering </p>	     
+    	<p>Major in Computer Engineering, Minor in Engineering Business</p>
+    	<p>University of Toronto St. George Campus, Toronto, ON</p>
+	</section>
+	<section id="tech">
+    	<h1>Technical Skills</h1>
+    	<h3>Software Languages:</h3>
+    	<ul>
+            <li>Object-Oriented (C, C++, Java, Python) - 5 years</li>
+            <li>SQL Database (MySQL, MicrosoftSQL, PostgreSQL, Java ODBC) - 1 year</li>
+            <li>JavaScript (JQuery, JSON, AngularJS) - 1 year</li>
+            <li>ASP.NET (VB, C#) - 1 year</li>
+            <li>Swift (iOS App Dev) - beginner</li>
+            <li>Web Development (PHP, html, XML, CSS, Markdown Language) - 1.5 years</li>
+        </ul>
+        <h3>Platforms:</h3>
+        <p>Microsoft Visual Studio, Microsoft Dynamics CRM, Eclipse, XCode</p>
+        <h3>SCM Tools:</h3>
+        <p>Microsoft Visual Studio TFS, Git, Subversion (linux)</p>
+        <h3>Operating Systems:</h3>
+        <p>Microsoft Windows, MacOS, Linux/UNIX</p>
+        <h3>Others:</h3>
+        <p>AGILE/SCRUM development cycles, Network programming (TCP/IP protocol), Multi-threading and optimization, Data structures and algorithms, VR/AR, Technical documentation</p>
+    </section>
+    <section id="work">
+	    <h1>Work Experience</h1>
+        <img alt="CityOfBrampton" class="square" src="/img/brampton.jpg">
+    	<h2>2014-2015</h2>
+        <h3>System Developer, City of Brampton, Ontario:</h3>
+        <ul>
+            <li>Enrolled in Professional Experience Year (PEY) program in the University of Toronto for one year, working as a System Developer in the Solution Delivery team of IT services in the City of Brampton</li>
+            <li>Customized Visual Basic macros for Excel to automate data retrieval from server storage and smart fill tables</li>
+            <li>Queried data for fire incidents and categorized them into types and years, which was then translated into a heat map presentation on the city website</li>
+            <li>Resolved over 50 bugs in the Application Inventory Depository site written in VB.Net to launch it into production</li>
+            <li>Designed the Transit Incident Tracking System (see page 2, second project) to address the city’s need for an online, easy-to-use tracking system</li>
+            <li>Researched a solution to outline the system dependencies in the City of Brampton and showcased the results via demos</li>
+        </ul>
+    </section>
+    <section id="project">
+	    <h1>Programming and Engineering Projects</h1>
+    	<h2>2015-2016</h2>
+        <h3>Team Lead of a Real-time Piano Simulator Project,<br>University of Toronto:</h3>
+        <ul>
+            <li>Handled a project in a team of 4 to recreate authentic piano sound at real time by simulating complex physical piano mechanism rather than simple piano key sampling</li>
+            <li>Divided the team into 2 groups: the algorithm team responsible for calculations and research, and the programmer team responsible for software-hardware implementations</li>
+            <li>Visualized the piano sound algorithm as a function of time and initial key-strike velocity to simulate the action of the hammer striking the string inside the piano</li>
+            <li>Initially ran algorithm in matlab, converting calculated sample sound vectors into a playable sound wave</li>
+            <li>Migrated to C++ due to its superior runtime and available means of optimization such as multi-threading and blocking</li>
+            <li>Implemented hardware integration with a electric piano via USB ports and programmed generated sound onto each piano key</li>
+            <li>Demonstrated design at the annual University of Toronto design fair, allowing users to play with the piano freely while generating sound at real-time as keys were struck</li>
+        </ul>
+        <h2>2014-2015</h2>
+        <h3>Developer of the Transit Incident Tracking Solution,<br>City of Brampton:</h3>
+        <ul>
+            <li>Approached by the City of Brampton’s Transit Department representative to create a system tracking transit incident records within the City of     Brampton</li>
+            <li>Designed the system using the Microsoft Dynamics CRM 2011 platform</li>
+            <li>Drafted Excel document to outline schematic and relationship information</li>
+            <li>Implemented entities and forms to store information entered by the users</li>
+            <li>Customized the entities with JavaScript and JQuery to integrate smart forms to auto-fill information, hide and show fields to users with different roles and grey out unnecessary fields based on drop-down options</li>
+            <li>Built automated email sender using Microsoft CRM workflows and dialogs</li>
+            <li>Held weekly meetings with the client and the project manager for feedbacks</li>
+            <li>Presented design to the client and power-users and delivered the system into production</li>
+        </ul>
+        <h2>2014</h2>
+        <h3>Member of a VR Design Project Team,<br>University of Toronto:</h3>
+        <ul>
+            <li>Engaged in an VR application development project in C# on the Unity platform</li>
+            <li>Participated in a group of 3 and was assigned the task to brainstorm project design and elements to implement due to my prior music background</li>
+            <li>Created a virtual music player that respond to hand gestures to the sensor camera</li>
+            <li>Placed audio player on a virtual 3D plane and scaled music volume to the user’s distance from the player (the sound was strong if user was close and weak if user was far)</li>
+            <li>Supported multiple music players and placed audio control buttons to play and stop the music, as well as adjusting the volumes of each player through hand gestures only</li>
+            <li>Allowed project to be passed on to future VR developers with drafted technical documentation and packaged libraries</li>
+        </ul>
+    </section>
+    <section id="ind">
 	<h1>Other Individual Project</h1>
 	<h2>2017</h2>
     <h3>Creator of My Personal Website:</h3>
-    <ul>
-        <li>Drafted an individual website using GitHub platform powered by Jekyll</li>
-        <li>Involved HTML elements that form the website layout as well as CSS for styling</li>
-        <li>Utilized Jekyll's layout functionality to set up layout html and use content block for other index html elements</li>
-        <li>Imported CV from pdf to website and added graphic elements such as interactive buttons and images</li>
-    </ul>
-    <h2>2009</h2>
-    <h3>Developer of an Text-based Game:</h3>
-    <ul>
-        <li>Designed a text-based game in C++ with roleplaying elements</li>
-        <li>Drafted the game based on the famous Japanese animation, Dragon Ball Z</li>
-        <li>Incorporated ‘fun’ elements in the game, such as secret cheats, routes and items, as well as complex elements such as a battle system with random number generator</li>
-        <li>Implemented flowchart to represent flow of the storyboard and game progression</li>
-        <li>Logged progress with a programmer’s journal</li>
-        <li>Subjected the game to peer marking and received positive feedback</li>
-    </ul>
-    <br>
-    <p>Download source code and game.exe: <a href="/files/GamePackage.zip" class="button" title="Game Package"><span>Download Game Package  </span></a></p>
-	</section><section>
-	<h1>Hobbies and Interests</h1>
-	<ul>
-    	<li>Music playing (Piano - 13 years, Alto Saxophone - 4 years at school band)</li>
-        <li>Japanese culture and language</li>
-        <li>Culinary art</li>
-        <li>Tech gadgets and PC gaming</li>
-    </ul>
+        <ul>
+            <li>Drafted an individual website using GitHub platform powered by Jekyll</li>
+            <li>Involved HTML elements that form the website layout as well as CSS for styling</li>
+            <li>Utilized Jekyll's layout functionality to set up layout html and use content block for other index html elements</li>
+            <li>Imported CV from pdf to website and added graphic elements such as interactive buttons and images</li>
+        </ul>
+        <h2>2009</h2>
+        <h3>Developer of an Text-based Game:</h3>
+        <ul>
+            <li>Designed a text-based game in C++ with roleplaying elements</li>
+            <li>Drafted the game based on the famous Japanese animation, Dragon Ball Z</li>
+            <li>Incorporated ‘fun’ elements in the game, such as secret cheats, routes and items, as well as complex elements such as a battle system with random number generator</li>
+            <li>Implemented flowchart to represent flow of the storyboard and game progression</li>
+            <li>Logged progress with a programmer’s journal</li>
+            <li>Subjected the game to peer marking and received positive feedback</li>
+        </ul>
+        <br>
+        <p>Download source code and game.exe: <a href="/files/GamePackage.zip" class="button" title="Game Package"><span>Download Game Package  </span></a></p>
+	</section>
+	<section id="hobby">
+    	<h1>Hobbies and Interests</h1>
+    	<ul>
+        	<li>Music playing (Piano - 13 years, Alto Saxophone - 4 years at school band)</li>
+            <li>Japanese culture and language</li>
+            <li>Culinary art</li>
+            <li>Tech gadgets and PC gaming</li>
+        </ul>
     </section>
 </div>
