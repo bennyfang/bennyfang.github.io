@@ -6,7 +6,7 @@ $(document).ready(function(){
          * page is scrolled/
          */
         $(window).scroll(function(){
-            var window_top = $(window).scrollTop() + 40; // the "12" should equal the margin-top value for nav.stick
+            var window_top = $(window).scrollTop() + 0; // the "+" number should equal the margin-top value for nav.stick
             var div_top = $('#nav-anchor').offset().top;
                 if (window_top > div_top) {
                     $('nav').addClass('stick');
@@ -50,17 +50,17 @@ $(document).ready(function(){
                 var divPos = $(theID).offset().top; // get the offset of the div from the top of page
                 var divHeight = $(theID).height(); // get the height of the div in question
                 if (windowPos >= divPos && windowPos < (divPos + divHeight)) {
-                    $("a[href='" + theID + "']").addClass("nav-active");
+                    $("a[href='" + theID + "']").addClass("active");
                 } else {
-                    $("a[href='" + theID + "']").removeClass("nav-active");
+                    $("a[href='" + theID + "']").removeClass("active");
                 }
             }
             
             if(windowPos + windowHeight == docHeight) {
-                if (!$("nav li:last-child a").hasClass("nav-active")) {
-                    var navActiveCurrent = $(".nav-active").attr("href");
-                    $("a[href='" + navActiveCurrent + "']").removeClass("nav-active");
-                    $("nav li:last-child a").addClass("nav-active");
+                if (!$("nav li:last-child a").hasClass("active")) {
+                    var navActiveCurrent = $(".active").attr("href");
+                    $("a[href='" + navActiveCurrent + "']").removeClass("active");
+                    $("nav li:last-child a").addClass("active");
                 }
             }
         });

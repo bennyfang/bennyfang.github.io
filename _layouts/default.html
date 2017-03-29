@@ -1,39 +1,21 @@
 <!DOCTYPE html>
-	<html>
-        <div>
-        	<head>
-        	    <meta charset="utf-8">
-            	<meta name="viewport" width="device-width, initial-scale=1.0">
-            	<meta name="description" content="{{ page.description }}">
-            	<meta name="author" content="Benny Fang">
-        		<title>{{ page.title }} | Benny Fang</title>
-        		<!-- link to main stylesheet -->
-        		<link rel="stylesheet" type="text/css" href="/css/main.css">
-        		<link rel="stylesheet" type="text/css" href="/css/img.css">
-        	</head>
-        	<body>
-        		<nav>
-            		<ul>
-                		<li class="nav-home"><a href="/">Home</a></li>
-        	        	<li class="nav-cv"><a href="/cv">CV</a></li>
-                		<li class="nav-about"><a href="/about">About</a></li>
-                		<!--li><a href="/blog">Blog</a></li-->
-            		</ul>
-        		</nav>        		
-    		    <div class="container">
-        		
-        		{{ content }}
-        		
-        		</div><!-- /.container -->
-        		
-        		<footer>
-            		<ul>
-                		<li>Email Me @ <a href="mailto:bfang.01234@gmail.com">bfang.01234@gmail.com</a></li>
-                		<li><a href="https://github.com/bennyfang">My GitHub</a></li>
-                		<li><a href="https://www.linkedin.com/in/benny-fang-87479b8b?trk=hp-identity-photo">My LinkedIn</a></li>
-                		<li><a href="https://www.bennylicious.club">My FoodBlog</a></li>
-        			</ul>
-        		</footer>
-        	</body>
-		</div>
-	</html>
+<html lang="en">
+	
+	{% include head.html %}
+	
+	<body>
+	
+		<div class="container">
+			
+			{% include header.html %}
+			
+			{{ content }}
+			
+			{% include footer.html %}
+		
+		</div> <!-- /container -->
+	
+	</body>
+
+</html>
+
