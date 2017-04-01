@@ -1,67 +1,32 @@
+/* This script show and hide tabs on click */
+
 $(document).ready(function(){
+    // initialize the first tab as active
+    var currTabElement = $("#sidebar nav li").children()[0];
         
-        /** 
-         * This part does the "fixed navigation after scroll" functionality
-         * We use the jQuery function scroll() to recalculate our variables as the 
-         * page is scrolled/
-         */
-        $(window).scroll(function(){
-            var window_top = $(window).scrollTop() + 0; // the "+" number should equal the margin-top value for nav.stick
-            var div_top = $('#nav-anchor').offset().top;
-                if (window_top > div_top) {
-                    $('nav').addClass('stick');
-                } else {
-                    $('nav').removeClass('stick');
-                }
-        });
-        
-        
-        /**
-         * This part causes smooth scrolling using scrollto.js
-         * We target all a tags inside the nav, and apply the scrollto.js to it.
-         */
-        $(".cvsidebar nav a").click(function(evn){
-            evn.preventDefault();
-            $('html,body').scrollTo(this.hash, this.hash); 
-        });
-        
-        
-        
-        /**
-         * This part handles the highlighting functionality.
-         * We use the scroll functionality again, some array creation and 
-         * manipulation, class adding and class removing, and conditional testing
-         */
-        var aChildren = $("nav li").children(); // find the a children of the list items
-        var aArray = []; // create the empty aArray
-        for (var i=0; i < aChildren.length; i++) {    
-            var aChild = aChildren[i];
-            var ahref = $(aChild).attr('href');
-            aArray.push(ahref);
-        } // this for loop fills the aArray with attribute href values
-        
-        $(window).scroll(function(){
-            var windowPos = $(window).scrollTop(); // get the offset of the window from the top of page
-            var windowHeight = $(window).height(); // get the height of the window
-            var docHeight = $(document).height();
-            
-            for (var i=0; i < aArray.length; i++) {
-                var theID = aArray[i];
-                var divPos = $(theID).offset().top; // get the offset of the div from the top of page
-                var divHeight = $(theID).height(); // get the height of the div in question
-                if (windowPos >= divPos && windowPos < (divPos + divHeight)) {
-                    $("a[href='" + theID + "']").addClass("active");
-                } else {
-                    $("a[href='" + theID + "']").removeClass("active");
-                }
-            }
-            
-            if(windowPos + windowHeight == docHeight) {
-                if (!$("nav li:last-child a").hasClass("active")) {
-                    var navActiveCurrent = $(".active").attr("href");
-                    $("a[href='" + navActiveCurrent + "']").removeClass("active");
-                    $("nav li:last-child a").addClass("active");
-                }
-            }
-        });
+   	// set onclick function to show and hide tabs
+    $("#sidebar nav a").click(function(evn){
+    	// stop default event
+        evn.preventDefault();
+        // reset main content position to top
+   		$('#main').scrollTop(0);
+        // get the href of the current and clicked tab and show/hide if it is different from current tab   
+        var currTab = $(currTabElement).attr('href'); 
+        var clickedTab = $(this).attr('href');       
+        // compare
+        if (clickedTab != currTab) {
+        		// remove active tab and hide its content
+        		$(currTabElement).removeClass('active');
+            	$(currTab).hide();
+        		
+        		// set clicked tab as active and show its content
+        		$(this).addClass('active');
+            	$(clickedTab).show();
+            	
+            	// set current tab to this new one
+            	currTabElement = this;
+            	
+        }
     });
+});
+
