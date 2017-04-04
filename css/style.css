@@ -16,12 +16,6 @@ body, p, .cv li, .cv ul li {
   }
 }
 
-@media (min-width: 800px) {
-  .footer {
-    width: 600px;
-  }
-}
-
 /* body, nav, footer */
 body { 
     padding-top: 40px;
@@ -48,16 +42,16 @@ nav ul li {
 
 footer {
 	border-top: 1px solid #d5d5d5; /* grey border */
-    float: left;
     font-size: 13px;
     bottom: 0px;
-    height: 75px;
 }
 
 footer ul li {
+	float: left;
+	list-style: none;
     display: inline;
     margin-right: 80px;
-    line-height: 200%;
+    line-height: 100%;
 }
 
 /* paragraph and font */
@@ -91,6 +85,7 @@ p {
 
 
 /* cv tab */
+
 .cv ul li {
     font-size: 20px;
     line-height: 200%;
