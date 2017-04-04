@@ -16,6 +16,12 @@ body, p, .cv li, .cv ul li {
   }
 }
 
+@media (min-width: 800px) {
+  .footer {
+    width: 600px;
+  }
+}
+
 /* body, nav, footer */
 body { 
     padding-top: 40px;
@@ -41,7 +47,7 @@ nav ul li {
 }
 
 footer {
-    border-top: 1px solid #d5d5d5;
+	border-top: 1px solid #d5d5d5; /* grey border */
     float: left;
     font-size: 13px;
     bottom: 0px;
@@ -50,7 +56,7 @@ footer {
 
 footer ul li {
     display: inline;
-    margin-right: 60px;
+    margin-right: 80px;
     line-height: 200%;
 }
 
@@ -66,16 +72,16 @@ a:hover {
 }
 
 h1 {
-    font-size: 35px;
-    padding-bottom: 17.5px;
-}
-h2 {
-    font-size: 30px; 
+    font-size: 30px;
     padding-bottom: 15px;
 }
-h3 {
+h2 {
     font-size: 25px; 
     padding-bottom: 12.5px;
+}
+h3 {
+    font-size: 20px; 
+    padding-bottom: 10px;
 }
 p { 
     font-size: 20px;
@@ -92,48 +98,15 @@ p {
     margin-left: -19px; /* match bulletpoint with paragraph */
     list-style-position: outside;
 }
+.cv ul li.innerbullet {
+	list-style-type: circle;
+	margin-left: 19px; /* place indentation for secondary bullet */
+}
 
 .cv h1 { font-style: italic; }
 .cv h2 { text-decoration: underline; }
 
-/* cv sidebar */
-/*
-.cvsidebar {
-    width: inherit;
-    min-width: 220px;
-    max-width: 220px;
-    background-color:#f5f5f5;
-    float: left;
-    height:100%;
-    position:relative;
-    overflow-y:auto;
-    overflow-x:hidden;
-}
-
-.cvsidebar nav { 
-    width: 200px;
-    padding-left: 30px;
-}
-
-.cvsidebar nav ul li {
-    font-size: 15px;
-    float: left;
-    list-style: none;
-    
-}
-.cvsidebar nav.stick {
-    position: fixed;
-    top: 0;
-    z-index: 10000;
-    margin-top: 0px;
-}
-*/
-
-/* offcanvas style */
-
-body,html,.row-offcanvas {
-  height:100%;
-}
+/* sidebar and main format under cv */
 
 #sidebar {
   width: inherit;
@@ -145,6 +118,7 @@ body,html,.row-offcanvas {
   overflow-y:auto;
   overflow-x:hidden;
 }
+
 #main {
   height:100%;
   overflow:auto;
@@ -204,7 +178,7 @@ body,html,.row-offcanvas {
     overflow: hidden;
     border-radius: 50%;
     float: left;
-    margin: 15px 25px 15px 0px;
+    margin: 15px;
 }
 
 .cv .image-cropper {
@@ -214,7 +188,7 @@ body,html,.row-offcanvas {
     overflow: hidden;
     border-radius: 50%;
     float: right;
-    margin: 15px 0px 15px 15px;
+    margin: 15px;
 }
 
 img {
@@ -230,7 +204,7 @@ img.square {
     position: relative;
     overflow: hidden;
     float: right;
-    margin: 15px 0px 15px 15px;
+    margin: 15px;
     display: inline;
 }
 
