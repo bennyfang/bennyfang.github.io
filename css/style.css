@@ -91,6 +91,7 @@ p {
     line-height: 200%;
     list-style: disk;
     margin-left: -19px; /* match bulletpoint with paragraph */
+    margin-right: 20px; /* match image margin */
     list-style-position: outside;
 }
 .cv ul li.innerbullet {
@@ -100,6 +101,7 @@ p {
 
 .cv h1 { font-style: italic; }
 .cv h2 { text-decoration: underline; }
+.cv h3 { line-height: 200%; }
 
 /* sidebar and main format under cv */
 
@@ -194,12 +196,12 @@ img {
 }
 
 img.square {
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 140px;
     position: relative;
     overflow: hidden;
     float: right;
-    margin: 15px;
+    margin: -15px 0; /* tighten space above and below image to avoid text shifting */
     display: inline;
 }
 

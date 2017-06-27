@@ -8,8 +8,6 @@ $(document).ready(function(){
     $("#sidebar nav a").click(function(evn){
     	// stop default event
         evn.preventDefault();
-        // reset main content position to top
-   		$('#main').scrollTop(0);
         // get the href of the current and clicked tab and show/hide if it is different from current tab   
         var currTab = $(currTabElement).attr('href'); 
         var clickedTab = $(this).attr('href');       
@@ -18,15 +16,14 @@ $(document).ready(function(){
         		// remove active tab and hide its content
         		$(currTabElement).removeClass('active');
             	$(currTab).hide();
-        		
         		// set clicked tab as active and show its content
         		$(this).addClass('active');
             	$(clickedTab).show();
-            	
             	// set current tab to this new one
-            	currTabElement = this;
-            	
+            	currTabElement = this;	
         }
+        // reset main content position to top
+        $('#main').scrollTop(0);
     });
 });
 
